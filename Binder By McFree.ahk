@@ -3,8 +3,7 @@
 #MaxThreadsPerHotkey 1
 #MaxThreads 2
 #Include SAMPMAX.ahk
-;SendMessage, 0x50,, 0x4190419,, A ; русский
-SendMessage, 0x50,, 0x4090409,, A ; английский
+SendMessage, 0x50,, 0x4190419,, A ; русский
 objWMIService := ComObjGet("winmgmts:\\.\root\cimv2")
 colItems := objWMIService.ExecQuery("SELECT * FROM Win32_LogicalDisk")._NewEnum
 while colItems[objItem]
@@ -32,7 +31,7 @@ try {
 ;=================================
 ;=================================
 ;=================================
-Version := "2.3.3"
+Version := "2.3.5"
 MYNICK := getUsername() 
 MYID := getId() 
 MYPING := getPlayerPingById(getId())
@@ -60,7 +59,7 @@ Random, ICO, 1,5
 Random, String, 1, Mess.Length()
 Gui, 4:Add, Text, x3 y-8 w274 h15 +Center, ___________________________________________________________________
 Gui, 4:Add, Picture, x10 y20 w50 h50 , %A_ScriptDir%\Skins\McFreeICO%ICO%.ico
-Gui, 4:Add, Text, x73 y11 w250 h20, Разработчик: McFree 
+Gui, 4:Add, Text, x73 y11 w250 h20, Разработчик: McFree (mf-soft.ru)
 Gui, 4:Add, Text, x73 y28 w250 h20, Версия: %Version% [21.05.2016] 
 Gui, 4:Add, Text, x73 y46 w250 h20, Skype: Maletsifist  | VK.com/mcfreeman
 Gui, 4:Add, Text, x73 y66 w250 h20, Нас Уже: %Users%! Online: %Online%!
@@ -196,7 +195,7 @@ ExitApp
 return
 
 OffTopic:
-run, http://mcfree.bplaced.net/
+run, http://mf-soft.ru/index.php?act=soft&id=4
 return
 
 DontUpload:
