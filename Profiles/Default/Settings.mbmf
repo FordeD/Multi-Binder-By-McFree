@@ -1,0 +1,7 @@
+[Main]
+NumTabs=3
+HKeyReload=none
+HKeyPause=none
+AutoUpdate=true
+UpdNotific=true
+TrayLaunch=false

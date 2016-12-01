@@ -1,0 +1,10 @@
+[Main]
+HKey=!c
+NumStrings=
+Type=
+Flooder=false
+
+[String1]
+Text=Аллах акбар!
+Wait=1
+TEnter=false
